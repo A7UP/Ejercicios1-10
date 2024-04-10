@@ -1,19 +1,19 @@
 function ejercicio6 (){
-    var numero = prompt ("Ingresar un numero");
+    var num = prompt ("Ingresar un numero");
     
-    let paroImp1 = paroImp(numero);
+    let paroImp1 = paroImp(num);
 
     console.log(paroImp1);
 }
 
-function paroImp(numero) {
+function paroImp(num) {
     if (numero == 0 ) {
         return "ingrese un numero valido";
     }
-    else if (numero % 2 === 0) {
-        return `El numero ${numero} es par`;
+    else if (num % 2 === 0) {
+        return `El numero ${num} es par`;
     }
-    else if (numero % 2 !==0) {
-        return `El numero ${numero} es impar`;
+    else if (num % 2 !==0) {
+        return `El numero ${num} es impar`;
     }
 }
